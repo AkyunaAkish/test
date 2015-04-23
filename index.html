@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script type="text/javascript" src="java.js/jquery-1.11.2.min.js"></script>
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
 <h1>WELCOME</h1>
 <body>
+
+<a href="#">Bandwidth</a>
+<a href="#" onclick="javascript:getresource('5');">Upload</a>
+<p align="center">
+<img id="img3" src="dnagif.gif" style="visibility: hidden;" />
+<img id="img4" src="dnagif.gif" style="visibility: hidden;" />
+</p>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <img src="floweroflife.jpg" alt="floweroflife.jpg">
-  <img src="dnagif.gif" alt="Gif" title="Gif" />
+  <img class="foo" src="floweroflife.jpg" alt="floweroflife.jpg">
+  <img class="fizz" src="dnagif.gif" alt="Gif" title="Gif" />
+  <div id='wrap-1'>
+    <input type="button" class='buttontest' value="Show/Hide 1">
+<a href="dnagif.gif">
+ <img src="dnagif.gif" border="0" width="900" height="300" alt="image1" target="nowa_strona" class="logotest">
+</a>
+
+</div>
+<div id='fizz'>
+    <input type="button" class="buttontest" value="Show/Hide 2">
+<a href="dnagif.gif">
+  <img src="dnagif.gif" border="0" width="900" height="300" alt="image2" target="nowa_strona" class="logotest">
+</a>
+
+</div>
+
+<script>
+    $('.fizz').on('click', function() {
+      $(this).hide();
+    });
+    $(":button")
+  </script>
+ 
+$('.fizz').on('click', function() {
+  $('.fizz').click(function () {
+    $(this).parent().find('dnagif.gif').toggle('slow');
+
+  });
+});
+
 </body>
 </html>
